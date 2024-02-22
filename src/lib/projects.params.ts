@@ -17,7 +17,7 @@ const MY_PROJECTS: Array<Project> = [
 			from: new Date()
 		},
 		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		type: 'Publication'
 	},
 	{
 		slug: 'slick-portfolio-svelte',

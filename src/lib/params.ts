@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Welcome to my portfolio!';
+export const TITLE_SUFFIX = '';
 
 export const NavBar = {
 	home: 'Home',

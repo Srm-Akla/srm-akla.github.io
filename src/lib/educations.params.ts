@@ -5,6 +5,7 @@ export const MY_EDUCATIONS: Array<Education> = [
 	{
 		degree: 'Bachelor degree of Electronics Engineering',
 		description: '',
+		color: 'green',
 		location: 'Grimstad, Norway',
 		logo: Assets.Unknown,
 		name: 'University of Agder',
@@ -18,6 +19,7 @@ export const MY_EDUCATIONS: Array<Education> = [
 	{
 		degree: 'Master degree in Artificial Intelligence and Internet Of Things',
 		description: '',
+		color: 'green',
 		location: 'Grimstad, Norway',
 		logo: Assets.Unknown,
 		name: 'University of Agder',

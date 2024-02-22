@@ -72,6 +72,7 @@ export interface Education extends Item {
 	};
 	subjects: Array<string>;
 	degree: string;
+	color: Color;
 }
 
 export interface PageParams {

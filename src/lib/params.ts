@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Welcome to my portfolio!';
 
 export const NavBar = {
 	home: 'Home',
@@ -46,36 +46,20 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Sriram',
+	lastName: 'Akella',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		`Hey, I'm Sriram Akella, a tech enthusiast with a knack for problem-solving. I hold a Master's in AI and a Bachelor's in Electronics. When I'm not diving into the latest tech trends, you'll find me outdoors staying active or catching up with friends over a pint. Let's connect and explore some exciting projects together!`,
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
-		{
-			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
-		{
-			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
+		{ platform: Platform.GitHub, link: 'https://github.com/srm-akla' },
+		{ platform: Platform.Email, link: 'sriramakella@proton.me' },
+	/**
+		{ platform: Platform.Linkedin, link: 'https://www.linkedin.com/' },
+		{ platform: Platform.Twitter, link: 'https://twitter.com/' },
+		{ platform: Platform.StackOverflow, link: 'https://stackoverflow.com/' },
+		{ platform: Platform.Youtube, link: 'https://www.youtube.com' },
+		{ platform: Platform.Facebook, link: 'https://www.facebook.com' },
+	    **/
 	]
 };
 

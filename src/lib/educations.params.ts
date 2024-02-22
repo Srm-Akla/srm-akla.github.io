@@ -3,27 +3,29 @@ import type { Education } from './types';
 
 export const MY_EDUCATIONS: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
+		degree: 'Bachelor degree of Electronics Engineering',
 		description: '',
-		location: 'Tunisia',
+		location: 'Grimstad, Norway',
 		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
+		name: 'University of Agder',
+		organization: 'UIA',
+		period: { from: new Date(2018, 8, 15), to: new Date(2022, 6, 5) },
 		shortDescription: '',
 		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
+		subjects: ['Digital Electronics', 'Analog Electronics', 'Embedded Systems', 'Algorithms',
+					'Communications', 'Signal Analysis', 'Operating systems', 'Databases']
 	},
 	{
-		degree: 'PhD of Computer Science',
+		degree: 'Master degree in Artificial Intelligence and Internet Of Things',
 		description: '',
-		location: 'USA',
+		location: 'Grimstad, Norway',
 		logo: Assets.Unknown,
-		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		name: 'University of Agder',
+		organization: 'Agder',
+		period: { from: new Date(2022, 8, 15), to: new Date(2024, 6, 17) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		subjects: ['Neural Networks', 'Reinforcement Learning', 'Distributed and Big Data Systems', 
+					'WiFi, 5G, IoT', 'Computer Vision']
 	}
 ];

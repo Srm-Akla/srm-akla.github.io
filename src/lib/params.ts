@@ -65,7 +65,8 @@ export const HOME: HomePageParams = {
 
 export const PROJECTS: ProjectPageParams = {
 	title: 'Projects',
-	items: MY_PROJECTS
+	items: MY_PROJECTS,
+    color: "#0ff000"
 };
 
 export const EXPERIENCES: ExperiencePageParams = {

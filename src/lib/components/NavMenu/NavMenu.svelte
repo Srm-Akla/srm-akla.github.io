@@ -25,11 +25,11 @@
 	}
 
 	const items = [
-		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube' },
-		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development' },
-		{ title: NavBar.Education, to: '/education', icon: 'i-carbon-education' },
-		{ title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster' },
-		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' }
+		{ title: NavBar.personal, to: '/projects', icon: 'i-carbon-cube', bgcolor: 'var(--code-keyword)' },
+		{ title: NavBar.career, to: '/experience', icon: 'i-carbon-development', bgcolor: 'var(--code-string)' },
+		{ title: NavBar.Education, to: '/education', icon: 'i-carbon-education', bgcolor: 'var(--code-function)' },
+		{ title: NavBar.skills, to: '/skills', icon: 'i-carbon-software-resource-cluster', bgcolor: 'var(--code-constant)' },
+		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result', bgcolor: 'var(--code-operator)' }
 	] as const;
 </script>
 
@@ -51,7 +51,7 @@
 		</div>
 		<div class="flex-row flex-1 self-center h-full justify-center hidden md:flex">
 			{#each items as item}
-				<a href={`${base}${item.to}`} class="nav-menu-item !text-[var(--secondary-text)]">
+				<a href={`${base}${item.to}`} class="nav-menu-item" style="color:{`${item.bgcolor}`}">
 					<UIcon icon={item.icon} classes="text-1.3em" />
 					<span class="nav-menu-item-label">{item.title}</span>
 				</a>

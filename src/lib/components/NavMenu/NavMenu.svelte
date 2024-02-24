@@ -39,7 +39,7 @@
 			href={`${base}/`}
 			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
-			<UIcon icon="${base}/static/avatar.png" classes="text-2em" />
+            <UIcon icon="i-carbon-home" classes="text-2em" />
 			<span
 				class="ml-2 text-md font-bold hidden md:inline overflow-hidden whitespace-nowrap text-ellipsis"
 				>{HOME.name} {HOME.lastName}

@@ -3,7 +3,24 @@ import { getSkills } from './skills.params';
 import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
+
 	{
+		slug: 'asdfasdf',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Slick Portfolio',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('angular', 'ts', 'tailwind'),
+		type: 'Publication'
+	},
+	/**{
 		slug: 'slick-portfolio-angular',
 		color: '#f5e0dc',
 		description:
@@ -60,7 +77,7 @@ const MY_PROJECTS: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
-	}
+	}**/
 ];
 
 export default MY_PROJECTS;

@@ -75,6 +75,7 @@ const Assets = {
 	Bash: a('bash.svg'),
 	R: a('R.png'),
 	Octave: a('octave.svg'),
+	Lua: a('lua.svg'),
 };
 
 export default Assets;

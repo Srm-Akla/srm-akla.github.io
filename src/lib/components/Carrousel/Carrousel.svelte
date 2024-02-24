@@ -16,7 +16,7 @@
 	$: {
 		if (element) {
 			element.scroll({
-				left: index * 150,
+				left: index * 180,
 				behavior: 'smooth'
 			});
 		}
@@ -80,7 +80,7 @@
 		<UIcon icon="i-carbon-chevron-left" />
 	</button>
 
-	<div bind:this={element} class="row overflow-hidden box-content w-150px">
+	<div bind:this={element} class="row overflow-hidden box-content w-170px">
 		{#each items as item}
 			<div class="box-content w-150px p-15px col-center">
 				<img class="w-160px h-160px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />

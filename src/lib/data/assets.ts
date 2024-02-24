@@ -72,6 +72,9 @@ const Assets = {
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
 	UIA: a('UIA.png'),
+	Bash: a('bash.svg'),
+	R: a('R.png'),
+	Octave: a('octave.svg'),
 };
 
 export default Assets;

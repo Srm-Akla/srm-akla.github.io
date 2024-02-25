@@ -6,7 +6,7 @@
 	const { item, title } = RESUME;
 </script>
 
-<CommonPage {title}>
+<CommonPage {title} titleClass={'text-[var(--code-operator)]'}>
 	<div class="resume">
 		{#if item}
 			<a href={item}>

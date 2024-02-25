@@ -23,7 +23,7 @@
 	};
 </script>
 
-<SearchPage {title} on:search={onSearch}>
+<SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-constant)]'}>
 	{#if result.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
 			<UIcon icon="i-carbon-cube" classes="text-3.5em" />

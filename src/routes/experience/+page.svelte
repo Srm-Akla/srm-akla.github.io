@@ -27,7 +27,7 @@
 	};
 </script>
 
-<SearchPage {title} on:search={onSearch}>
+<SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-string)]'}>
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

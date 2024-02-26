@@ -8,28 +8,29 @@
 	import { getAssetURL } from '$lib/data/assets';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
-	const { items, title } = SKILLS;
+	const { skills, title } = SKILLS;
 
-	let result: Array<Skill> = items;
+	let result: Array<Skill> = skills;
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
 		const query = e.detail.search;
 
 		if (isBlank(query)) {
-			result = items;
+			result = skills;
 		}
 
-		result = items.filter((it) => it.name.toLowerCase().includes(query));
+		result = skills.filter((it) => it.name.toLowerCase().includes(query));
 	};
 </script>
 
 <SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-constant)]'}>
-	{#if result.length === 0}
+	{#if result.length === 0 }
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
 			<UIcon icon="i-carbon-cube" classes="text-3.5em" />
 			<p class="font-300">Could not find anything...</p>
 		</div>
 	{:else}
+	<!--<h1>Programming Skills</h1>-->
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-5 mt-10">
 			{#each result as skill (skill.slug)}
 				<Card

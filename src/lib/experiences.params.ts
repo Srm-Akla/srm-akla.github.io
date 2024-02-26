@@ -36,7 +36,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'Lab assistant',
 		company: 'University of Agder',
-		description: 'Assisting the professor in projects. Maintainence of lab equipment.',
+		description: 'Assisting the professor with lectures, projects, etc. Maintenance of lab equipment.',
 		contract: ContractType.PartTime,
 		type: 'PartTime',
 		location: 'Grimstad',

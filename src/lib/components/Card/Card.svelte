@@ -9,7 +9,7 @@
 	export let color = '#ffffff00';
 
 	export let margin = '0px';
-	export let tiltDegree = 10;
+	export let tiltDegree = 1;
 	export let classes: Array<string> = [];
 	export let href: undefined | string = undefined;
 	export let bgImg: string | undefined = undefined;

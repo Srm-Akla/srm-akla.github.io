@@ -37,7 +37,7 @@
 	<nav class="container flex flex-row items-center text-sm">
 		<a
 			href={`${base}/`}
-			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
+			class="nav-menu-left decoration-none w-auto md:w-150px lg:w-auto row flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--secondary-hover)]"
 		>
             <UIcon icon="i-carbon-home" classes="text-2em" />
 			<span
@@ -63,12 +63,12 @@
 			<div class="row hidden md:flex">
 				<a
 					href={`${base}/search`}
-					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
+					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--secondary-hover)]"
 				>
 					<UIcon icon="i-carbon-search" />
 				</a>
 				<button
-					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
+					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--secondary-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
 				>
 					{#if $theme}
@@ -78,7 +78,7 @@
 					{/if}
 				</button>
 			</div>
-			<div class="col-center md:hidden h-full hover:bg-[var(--main-hover)] cursor-pointer">
+			<div class="col-center md:hidden h-full hover:bg-[color:var(--secondary-hover)] cursor-pointer">
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
 				<div
 					class={`nav-bar-mobile-btn col-center ${expanded ? 'nav-bar-mobile-btn-expanded' : ''}`}
@@ -112,7 +112,7 @@
 				<span>Search</span>
 			</a>
 			<button
-				class="bg-transparent text-1em border-none cursor-pointer px-6 py-3 gap-2 row hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
+				class="bg-transparent text-1em border-none cursor-pointer px-6 py-3 gap-2 row hover:bg-[color:var(--secondary-hover)] text-[var(--secondary-text)] px-2"
 				on:click={() => toggleTheme()}
 			>
 				{#if $theme}
@@ -137,7 +137,7 @@
 		padding: 0px 10px;
 		height: 50px;
 		border-bottom: 1px solid var(--secondary);
-		background-color: var(--main);
+		background-color: var(--crust);
 
 		&-item {
 			text-decoration: none;
@@ -159,7 +159,7 @@
 			}
 
 			&:hover {
-				background-color: var(--main-hover);
+				background-color: var(--secondary-hover);
 			}
 		}
 	}
@@ -170,7 +170,7 @@
 		min-height: calc(100vh - 50px - 1px);
 		width: 100%;
 		position: absolute;
-		background-color: var(--main);
+		background-color: var(--crust);
 		top: 51px;
 		transform: translateY(-100vh);
 		transition-property: transform opacity;

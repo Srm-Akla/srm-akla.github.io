@@ -84,6 +84,10 @@ export interface PageWithSearchParams<T> extends PageParams {
 	items: Array<T>;
 }
 
+export interface SkillPageWithSearchParams<T> extends PageParams {
+	skills: Array<T>;
+}
+
 export interface HomeLink {
 	platform: Platform;
 	link: string;
@@ -105,7 +109,7 @@ export type ExperiencePageParams = PageWithSearchParams<Experience>;
 
 export type EducationPageParams = PageWithSearchParams<Education>;
 
-export type SkillsPageParams = PageWithSearchParams<Skill>;
+export type SkillsPageParams = SkillPageWithSearchParams<Skill>;
 
 export interface ResumePageParams extends PageParams {
 	item: string;

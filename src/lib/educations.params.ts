@@ -14,7 +14,7 @@ export const MY_EDUCATIONS: Array<Education> = [
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
 		subjects: ['Neural Networks', 'Reinforcement Learning', 'Distributed and Big Data Systems', 
-					'WiFi, 5G, IoT', 'Computer Vision']
+					'WiFi, 5G, IoT', 'Computer Vision', 'Edge computing', 'Generative AI']
 	},
 	{
 		degree: 'Bachelor degree of Electronics Engineering',

@@ -2,6 +2,7 @@ import { MY_EDUCATIONS } from './educations.params';
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
+
 import {
 	Platform,
 	type HomePageParams,
@@ -12,6 +13,7 @@ import {
 	type SearchPageParams,
 	type EducationPageParams
 } from './types';
+
 import { Icons } from './utils';
 
 export const TITLE_SUFFIX = '';
@@ -66,7 +68,6 @@ export const HOME: HomePageParams = {
 export const PROJECTS: ProjectPageParams = {
 	title: 'Projects',
 	items: MY_PROJECTS,
-    color: "#0ff000"
 };
 
 export const EXPERIENCES: ExperiencePageParams = {
@@ -76,12 +77,13 @@ export const EXPERIENCES: ExperiencePageParams = {
 
 export const SKILLS: SkillsPageParams = {
 	title: 'Skills',
-	items: MY_SKILLS
+	skills: MY_SKILLS,
+
 };
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: 'src/lib/md/CV_english_2024.pdf'
 };
 
 export const SEARCH: SearchPageParams = {

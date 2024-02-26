@@ -5,37 +5,118 @@ import type { Project } from './types';
 const MY_PROJECTS: Array<Project> = [
 
 	{
-		slug: 'asdfasdf',
+		slug: 'ODIAV',
 		color: '#f5e0dc',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			"Software that can detect humans, vehicles, roadlanes from an autonomous vehicle's perspective.",
+		links: [{ to: '', label: 'GitHub' }],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'Object Detection in Autonomous Vehicles',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Publication'
+		skills: getSkills('python', 'opencv', 'yolo', 'classif'),
+		type: 'Projects'
 	},
-	/**{
-		slug: 'slick-portfolio-angular',
+	{
+		slug: 'alarm',
 		color: '#f5e0dc',
 		description:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
+			'Alarm clock which displays the time and can be configured to set an alarm at a given time. The project is build using Atmega328P, FreeRTOS, timers, interrupts and etc.',
+		links: [{ to: '', label: 'GitHub' }],
 		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+		name: 'Alarm Clock',
 		period: {
 			from: new Date()
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
+		skills: getSkills('c', 'atmega328p', 'freertos'),
+		type: 'Project'
+	},
+	{
+		slug: 'amplifier',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'The project mainly consists of a voltage and an output which is a monolithic audio amplifier block that can supply 20 W to a 4 or 8 ohm speaker.',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Power Amplifier',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('circuit'),
+		type: 'Project'
+	},
+	{
+		slug: 'sensehat',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Controlling sensehat module of raspberry pi throught mqtt broker.',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'SenseHat-Mqtt',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'mqtt'),
+		type: 'Project'
+	},
+	{
+		slug: 'FLUWN',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Federated learning for finding the small-world networks in a cluster of randomly positioned UAVs. Analyze transmission delay, energy consumption, and throughput for the small world network.',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Federated Learning for UAV-assisted wireless network',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'tensorflow', 'opencv'),
 		type: 'Publication'
 	},
+	{
+		slug: 'dronebird',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Model trained to classify birds or drones, trained with custom dataset using thermal and depth camera.',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Classification of drones and birds using thermal and depth camera',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'tensorflow', 'pandas', 'classif'),
+		type: 'Publication'
+	},
+	{
+		slug: 'waveblue',
+		color: '#f5e0dc',
+		description:
+			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+		shortDescription:
+			'Wavelet-based Transform for Bluetooth-based Parking Spot Occupancy Detection using Convolutional Neural Network',
+		links: [{ to: '', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Wavelet-based Transform for Bluetooth-based Parking Spot Occupancy Detection using Convolutional Neural Network',
+		period: {
+			from: new Date()
+		},
+		skills: getSkills('python', 'tensorflow', 'pandas', 'classif'),
+		type: 'Publication'
+	},
+	/**
 	{
 		slug: 'slick-portfolio-svelte',
 		color: '#f2cdcd',

@@ -2,6 +2,7 @@
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
 	import { RESUME } from '$lib/params';
+	import { base } from '$app/paths';
 
 	const { item, title } = RESUME;
 </script>
@@ -9,7 +10,7 @@
 <CommonPage {title} titleClass={'text-[var(--code-operator)]'}>
 	<div class="resume">
 		{#if item}
-			<a href={item}>
+			<a href="{base}{item}">
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}

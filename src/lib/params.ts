@@ -83,7 +83,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: 'src/lib/md/CV_english_2024.pdf'
+	item: '/CV_english_2024.pdf'
 };
 
 export const SEARCH: SearchPageParams = {

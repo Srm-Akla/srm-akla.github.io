@@ -6,6 +6,8 @@ Welcome to my digital playground!
  
  Let's embark on a journey of tech discovery together!
 
+https://srm-akla.github.io/
+
 ---
 
 ### Credit to [RiadH Adrani](https://github.com/RiadhAdrani/slick-portfolio-svelte) for the design.

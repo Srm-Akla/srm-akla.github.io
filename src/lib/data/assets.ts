@@ -70,12 +70,16 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
+<<<<<<< HEAD
 	Postcss: a('postcss.svg'),
 	UIA: a('UIA.png'),
 	Bash: a('bash.svg'),
 	R: a('R.png'),
 	Octave: a('octave.svg'),
 	Lua: a('lua.svg'),
+=======
+	Postcss: a('postcss.svg')
+>>>>>>> upstream/master
 };
 
 export default Assets;

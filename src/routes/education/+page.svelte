@@ -5,12 +5,19 @@
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import { getAssetURL } from '$lib/data/assets';
 
+<<<<<<< HEAD
 	import { EDUCATION } from '$lib/params';
 	import type { Education } from '$lib/types';
 	import { getTimeDiff } from '$lib/utils';
 
 	const { items, title } = EDUCATION;
 
+=======
+	import { title, items } from '@data/education';
+	import type { Education } from '$lib/types';
+	import { getTimeDiff } from '$lib/utils';
+
+>>>>>>> upstream/master
 	let search = '';
 
 	let result: Array<Education> = items;
@@ -31,7 +38,11 @@
 	};
 </script>
 
+<<<<<<< HEAD
 <SearchPage {title} {search} on:search={onSearch} titleClass={'text-[var(--code-function)]'}>
+=======
+<SearchPage {title} {search} on:search={onSearch}>
+>>>>>>> upstream/master
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

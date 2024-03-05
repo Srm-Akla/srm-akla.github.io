@@ -1,4 +1,5 @@
 <script lang="ts">
+<<<<<<< HEAD
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
 
@@ -6,6 +7,16 @@
 	import type { Project } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { PROJECTS } from '$lib/params';
+=======
+	import { base } from '$app/paths';
+	import { getAssetURL } from '$lib/data/assets';
+	import { title } from '@data/projects';
+
+	import type { Project } from '$lib/types';
+
+	import CardLogo from '$lib/components/Card/CardLogo.svelte';
+	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
+>>>>>>> upstream/master
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -16,8 +27,11 @@
 
 	export let data: { project?: Project };
 
+<<<<<<< HEAD
 	const { title } = PROJECTS;
 
+=======
+>>>>>>> upstream/master
 	const screenshots = data.project?.screenshots ?? [];
 
 	let screenIndex: number | undefined = undefined;

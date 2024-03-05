@@ -2,6 +2,7 @@
 	import Carrousel from '$lib/components/Carrousel/Carrousel.svelte';
 	import Icon from '$lib/components/Icon/Icon.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
+<<<<<<< HEAD
 	import { TITLE_SUFFIX } from '$lib/params';
 	import { HOME, getPlatfromIcon } from '$lib/params';
 	import MY_SKILLS from '$lib/skills.params';
@@ -9,6 +10,14 @@
 	import { isBlank } from '@riadh-adrani/utils';
 
 	const { description, lastName, links, name, title, skills } = HOME;
+=======
+	import { titleSuffix } from '@data/app';
+	import { links, description, lastName, name, title, skills } from '@data/home';
+	import { items as skillsItems } from '@data/skills';
+	import { useTitle } from '$lib/utils/helpers';
+	import { isBlank } from '@riadh-adrani/utils';
+	import { getPlatfromIcon } from '$lib/utils';
+>>>>>>> upstream/master
 
 	const isEmail = (email: string): boolean => {
 		const reg =
@@ -19,15 +28,24 @@
 </script>
 
 <svelte:head>
+<<<<<<< HEAD
 	<title>{useTitle(title, TITLE_SUFFIX)}</title>
 </svelte:head>
 
 <!--<div class="snow"> </div>-->
+=======
+	<title>{useTitle(title, titleSuffix)}</title>
+</svelte:head>
+>>>>>>> upstream/master
 <div
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
 >
 	<div class="md:flex-1 gap-10px">
+<<<<<<< HEAD
 		<MainTitle classes="md:text-left text-[var(--code-operator)]">Welcome!</MainTitle>
+=======
+		<MainTitle classes="md:text-left ">{name} {lastName},</MainTitle>
+>>>>>>> upstream/master
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
@@ -39,11 +57,16 @@
 					target="_blank"
 					rel="noreferrer"
 				>
+<<<<<<< HEAD
 					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'30px'} />
+=======
+					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+>>>>>>> upstream/master
 				</a>
 			{/each}
 		</div>
 	</div>
+<<<<<<< HEAD
 	<Carrousel items={skills ?? MY_SKILLS} />
 </div>
 
@@ -99,3 +122,7 @@ $grad: ();
 
 
 </style>
+=======
+	<Carrousel items={skills ?? skillsItems} />
+</div>
+>>>>>>> upstream/master

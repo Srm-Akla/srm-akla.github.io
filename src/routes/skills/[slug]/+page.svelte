@@ -1,4 +1,5 @@
 <script lang="ts">
+<<<<<<< HEAD
 	import CardDivider from '$lib/components/Card/CardDivider.svelte';
 	import CardLogo from '$lib/components/Card/CardLogo.svelte';
 	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
@@ -9,6 +10,20 @@
 	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { SKILLS } from '$lib/params';
+=======
+	import { title } from '@data/skills';
+	import * as projects from '@data/projects';
+	import * as experiences from '@data/experience';
+
+	import { base } from '$app/paths';
+	import { getAssetURL } from '$lib/data/assets';
+
+	import type { Skill } from '$lib/types';
+
+	import MainTitle from '$lib/components/MainTitle/MainTitle.svelte';
+	import CardDivider from '$lib/components/Card/CardDivider.svelte';
+	import CardLogo from '$lib/components/Card/CardLogo.svelte';
+>>>>>>> upstream/master
 	import Markdown from '$lib/components/Markdown.svelte';
 	import TabTitle from '$lib/components/TabTitle.svelte';
 	import Chip from '$lib/components/Chip/Chip.svelte';
@@ -25,8 +40,11 @@
 
 	export let data: { skill?: Skill };
 
+<<<<<<< HEAD
 	const { title } = SKILLS;
 
+=======
+>>>>>>> upstream/master
 	const getRelatedProjects = (): Array<Related> => {
 		const out: Array<Related> = [];
 
@@ -36,7 +54,11 @@
 			return [];
 		}
 
+<<<<<<< HEAD
 		MY_PROJECTS.forEach((item) => {
+=======
+		projects.items.forEach((item) => {
+>>>>>>> upstream/master
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
 					img: getAssetURL(item.logo),
@@ -47,7 +69,12 @@
 				});
 			}
 		});
+<<<<<<< HEAD
 		MY_EXPERIENCES.forEach((item) => {
+=======
+
+		experiences.items.forEach((item) => {
+>>>>>>> upstream/master
 			if (item.skills.some((tech) => tech.slug === skill.slug)) {
 				out.push({
 					img: getAssetURL(item.logo),

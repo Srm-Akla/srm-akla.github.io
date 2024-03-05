@@ -10,13 +10,8 @@
 
 	$: className = `row-center cursor-pointer py-[5px] px-[15px] m-[2.5px] decoration-none inline-block border-[1px] border-solid border-[var(--border)] rounded-[20px] tracking-wider text-[0.9em] text-[var(--tertiary-text)] duration-[150ms] font-light  ${
 		active
-<<<<<<< HEAD
-			? 'bg-[var(--accent)] hover:bg-[var(--code-operator)]'
-			: 'bg-transparent hover:bg-[var(--code-operator)] hover:text-[var(--main)]'
-=======
 			? 'bg-[var(--accent)] hover:bg-[var(--accent-hover)]'
 			: 'bg-transparent hover:bg-[var(--main-hover)]'
->>>>>>> upstream/master
 	} ${classes}`;
 
 	onMount(() => {

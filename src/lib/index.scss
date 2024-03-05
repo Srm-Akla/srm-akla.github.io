@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
 	--dark-0: #232634;
+	--dark-00: #3b3b3b;
 	--dark-1: #292c3c;
 	--dark-2: #303446;
 	--dark-3: #414559;
@@ -17,6 +17,7 @@
 	--dark-8: #949cbb;
 
 	--light-0: #dce0e8;
+	--light-00: #cacaca;
 	--light-1: #e6e9ef;
 	--light-2: #eff1f5;
 	--light-3: #ccd0da;
@@ -43,50 +44,6 @@
 
 	--link-light: #7287fd;
 	--link-dark: #babbf1;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-:root {
-	--dark-0: #000;
-	--dark-00: #3b3b3b;
-	--dark-1: #1e1e1e;
-	--dark-2: #2e2e2e;
-	--dark-3: #3e3e3e;
-	--dark-4: #4e4e4e;
-	--dark-5: #5e5e5e;
-	--dark-6: #6e6e6e;
-	--dark-7: #7e7e7e;
-	--dark-8: #8e8e8e;
-
-	--light-0: #fff;
-	--light-00: #cacaca;
-	--light-1: #e1e1e1;
-	--light-2: #d1d1d1;
-	--light-3: #c1c1c1;
-	--light-4: #b1b1b1;
-	--light-5: #a1a1a1;
-	--light-6: #919191;
-	--light-7: #818181;
-	--light-8: #717171;
-
-	--code-keyword-light: #bd2864;
-	--code-keyword-dark: #bd2864;
-
-	--code-string-light: #297a3a;
-	--code-string-dark: #62c073;
-
-	--code-function-light: #0068d6;
-	--code-function-dark: #52a8ff;
-
-	--code-constant-dark: #f8c555;
-	--code-constant-light: #f08d49;
-
-	--code-operator-dark: #67cdcc;
-	--code-operator-light: #016464;
-
-	--link-dark: #2563eb;
-	--link-light: #3b82f6;
->>>>>>> upstream/master
 
 	--dark-0-60: rgba(0, 0, 0, 0.6);
 	--light-0-60: rgba(255, 255, 255, 0.6);
@@ -111,13 +68,9 @@ body {
 :root[data-theme='dark'] {
 	color-scheme: dark;
 
-<<<<<<< HEAD
     --crust: var(--dark-1);
 	--main: var(--dark-0);
-=======
-	--main: var(--dark-0);
 	--main-close: var(--dark-00);
->>>>>>> upstream/master
 	--main-hover: var(--dark-1);
 	--secondary: var(--dark-1);
 	--secondary-hover: var(--dark-2);
@@ -151,13 +104,9 @@ body {
 :root[data-theme='light'] {
 	color-scheme: light;
 
-<<<<<<< HEAD
     --crust: #e6e9ef;
 	--main: var(--light-0);
-=======
-	--main: var(--light-0);
 	--main-close: var(--light-00);
->>>>>>> upstream/master
 	--main-hover: var(--light-1);
 	--secondary: var(--light-1);
 	--secondary-hover: var(--light-2);
@@ -218,11 +167,7 @@ body {
 	--code-interpolation: var(--code-keyword);
 	--code-class-name: var(--secondary-text);
 
-<<<<<<< HEAD
 	font-family: 'Merriweather', serif;
-=======
-	font-family: 'Space Mono', monospace;
->>>>>>> upstream/master
 	font-size: 14px;
 
 	color: var(--tertiary-text);

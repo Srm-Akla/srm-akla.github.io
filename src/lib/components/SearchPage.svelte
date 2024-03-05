@@ -8,13 +8,9 @@
 
 	export let title = 'Title';
 	export let search = '';
-<<<<<<< HEAD
 	export let titleClass = '';
 
 	let searchInput: Input;
-=======
-    let searchInput: Input;
->>>>>>> upstream/master
 
 	const dispatch = createEventDispatcher();
 
@@ -37,11 +33,7 @@
 			const state = window.history.state;
 
 			window.history.replaceState(state, '', url);
-<<<<<<< HEAD
-
-=======
 			
->>>>>>> upstream/master
 			if ($page.url.pathname.startsWith(`${base}/search`)) {
 				if (searchInput) {
 					searchInput.focus();
@@ -58,11 +50,7 @@
 	});
 </script>
 
-<<<<<<< HEAD
 <CommonPage {title} {titleClass}>
-=======
-<CommonPage {title}>
->>>>>>> upstream/master
 	<div class="w-100% row">
 		<Input bind:this={searchInput} bind:value={search} placeholder={'Search...'} />
 	</div>

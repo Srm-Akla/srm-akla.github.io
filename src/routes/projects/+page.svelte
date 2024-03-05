@@ -1,13 +1,4 @@
 <script lang="ts">
-<<<<<<< HEAD
-	import Chip from '$lib/components/Chip/Chip.svelte';
-	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
-	import SearchPage from '$lib/components/SearchPage.svelte';
-	import { PROJECTS } from '$lib/params';
-	import type { Project, Skill } from '$lib/types';
-	import { onMount } from 'svelte';
-	import MY_SKILLS from '$lib/skills.params';
-=======
 	import { items, title } from '@data/projects';
 	import * as skills from '@data/skills';
 	import { onMount } from 'svelte';
@@ -17,20 +8,13 @@
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import ProjectCard from '$lib/components/ProjectCard/ProjectCard.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
->>>>>>> upstream/master
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
 	interface SkillFilter extends Skill {
 		isSelected?: boolean;
 	}
 
-<<<<<<< HEAD
-	const { items, title } = PROJECTS;
-
-	let filters: Array<SkillFilter> = MY_SKILLS.filter((it) => {
-=======
 	let filters: Array<SkillFilter> = skills.items.filter((it) => {
->>>>>>> upstream/master
 		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
 	});
 
@@ -86,11 +70,7 @@
 	});
 </script>
 
-<<<<<<< HEAD
 <SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-keyword)]'}>
-=======
-<SearchPage {title} on:search={onSearch}>
->>>>>>> upstream/master
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}

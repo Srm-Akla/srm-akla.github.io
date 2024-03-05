@@ -2,19 +2,10 @@
 	import ExperienceCard from '$lib/components/ExperienceCard/ExperienceCard.svelte';
 	import UIcon from '$lib/components/Icon/UIcon.svelte';
 	import SearchPage from '$lib/components/SearchPage.svelte';
-<<<<<<< HEAD
-	import { EXPERIENCES } from '$lib/params';
-	import type { Experience } from '$lib/types';
-	import { isBlank } from '@riadh-adrani/utils';
-
-	const { items, title } = EXPERIENCES;
-
-=======
 	import { items, title } from '@data/experience';
 	import type { Experience } from '$lib/types';
 	import { isBlank } from '@riadh-adrani/utils';
 
->>>>>>> upstream/master
 	let result: Array<Experience> = [...items];
 
 	const onSearch = (e: CustomEvent<{ search: string }>) => {
@@ -34,11 +25,7 @@
 	};
 </script>
 
-<<<<<<< HEAD
 <SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-string)]'}>
-=======
-<SearchPage {title} on:search={onSearch}>
->>>>>>> upstream/master
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

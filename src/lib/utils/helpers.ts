@@ -41,11 +41,7 @@ export const getMonthName = (index: number): string => {
 
 export const useImage = (url: string, base: string): string => `${base}${url}`;
 
-<<<<<<< HEAD
 export const useTitle = (title: string, suffix: string) => `${title} ${suffix}`;
-=======
-export const useTitle = (title: string, suffix: string) => `${title} | ${suffix}`;
->>>>>>> upstream/master
 
 export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60 * 60 * 24)) {
 	const d1 = dayjs(date1);
@@ -75,11 +71,7 @@ export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60
 	return `${Math.trunc(n)} ${u}${n > 1 ? 's' : ''}`;
 }
 
-<<<<<<< HEAD
-type ItemOrSkill = Item | Skill;
-=======
 export type ItemOrSkill = Item | Skill;
->>>>>>> upstream/master
 
 export function filterItemsByQuery<T extends ItemOrSkill>(
 	items: Array<T>,

@@ -8,10 +8,7 @@
 	import { getAssetURL } from '$lib/data/assets';
 	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
-<<<<<<< HEAD
-=======
 	import Chip from '../Chip/Chip.svelte';
->>>>>>> upstream/master
 
 	export let experience: Experience;
 
@@ -25,50 +22,21 @@
 		: 'Present';
 
 	const period = `${from} - ${to} · ${months}`;
-<<<<<<< HEAD
-=======
 
 	$: info = [
 		{ label: experience.company, icon: 'i-carbon-building' },
 		{ label: experience.location, icon: 'i-carbon-location' },
 		{ label: experience.contract, icon: 'i-carbon-hourglass' }
 	] as const;
->>>>>>> upstream/master
 </script>
 
 <Card
 	margin="0px 0px 20px 0px"
-<<<<<<< HEAD
-	tiltDegree={1}
-=======
 	tiltDegree={2}
->>>>>>> upstream/master
 	href={`${base}/experience/${experience.slug}`}
 	color={experience.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
-<<<<<<< HEAD
-		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={75} />
-		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
-			<h3
-				class="flex text-[0.9em] flex-col items-start sm:flex-row sm:items-center justify-between sm:gap-5 md:flex-col md:items-start md:gap-0 lg:flex-row lg:items-center"
-			>
-				<CardTitle title={experience.name} />
-			</h3>
-			<div class="row flex-wrap m-b-2 gap-1 text-0.9em font-300">
-				<ChipIcon name={`Company: ${experience.company}`}>
-					<UIcon icon="i-carbon-building" />
-				</ChipIcon>
-				<ChipIcon name={`Location: ${experience.location}`}>
-					<UIcon icon="i-carbon-location" />
-				</ChipIcon>
-				<ChipIcon name={`Contract: ${experience.contract}`}>
-					<UIcon icon="i-carbon-hourglass" />
-				</ChipIcon>
-			</div>
-			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
-=======
 		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={55} />
 		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
 			<div class="col ">
@@ -88,7 +56,6 @@
 			</div>
 			<div class="text-[var(--text)] text-[0.9em] font-200">{period}</div>
 			<div class="experience-description">{experience.shortDescription}</div>
->>>>>>> upstream/master
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon

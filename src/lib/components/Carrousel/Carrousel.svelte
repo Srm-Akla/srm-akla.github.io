@@ -16,11 +16,7 @@
 	$: {
 		if (element) {
 			element.scroll({
-<<<<<<< HEAD
-				left: index * 180,
-=======
 				left: index * 150,
->>>>>>> upstream/master
 				behavior: 'smooth'
 			});
 		}
@@ -84,17 +80,10 @@
 		<UIcon icon="i-carbon-chevron-left" />
 	</button>
 
-<<<<<<< HEAD
-	<div bind:this={element} class="row overflow-hidden box-content w-170px">
-		{#each items as item}
-			<div class="box-content w-150px p-15px col-center">
-				<img class="w-160px h-160px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
-=======
 	<div bind:this={element} class="row overflow-hidden box-content w-150px">
 		{#each items as item}
 			<div class="box-content w-150px p-15px col-center">
 				<img class="w-120px h-120px aspect-square" src={getAssetURL(item.logo)} alt={item.name} />
->>>>>>> upstream/master
 				<span class="text-center m-t-20px">{item.name}</span>
 			</div>
 		{/each}

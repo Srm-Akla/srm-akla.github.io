@@ -129,12 +129,12 @@
 		z-index: 10;
 		padding: 0px 10px;
 		height: 50px;
-		border-bottom: 1px solid var(--secondary);
+		border-bottom: 1px solid transparent;
 		background-color: var(--crust);
 
 		&-item {
 			text-decoration: none;
-			font-weight: 400;
+			font-weight: 600;
 			padding: 10px 20px;
 			color: inherit;
 			display: flex;

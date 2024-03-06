@@ -76,6 +76,14 @@ const Assets = {
 	R: a('R.png'),
 	Octave: a('octave.svg'),
 	Lua: a('lua.svg'),
+	Esn: a('esn.png'),
+	KOD: a('KOD.jpeg'),
+	SIA: a('SIA.png'),
+	FoF: a('FoF.jpg'),
+	UNG: a('Ungswingsor.png'),
+	opencv: a('OpenCV.png'),
+	scikit: a('scikit-learn.png'),
+	tf: a("TF.png"),
 };
 
 export default Assets;

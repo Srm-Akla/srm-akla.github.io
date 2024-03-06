@@ -1,6 +1,6 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
-import svelte from '../md/svelte.md?raw';
+import svelte from '@md/svelte.md?raw';
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -16,8 +16,9 @@ const categories = [
 	defineSkillCategory({ name: 'Testing', slug: 'test' }),
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
-	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Applications', slug: 'appli' }),
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Operating Systems', slug: 'os' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -38,8 +39,7 @@ export const items = [
 	defineSkill({
 		slug: 'c',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: svelte,
 		logo: Assets.C,
 		name: 'C',
 		category: 'pro-lang'
@@ -50,7 +50,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Cpp,
-		name: 'C++'
+		name: 'C++',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'python',
@@ -58,7 +59,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Python,
-		name: 'Python'
+		name: 'Python',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'bash',
@@ -66,7 +68,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Bash,
-		name: 'Bash'
+		name: 'Bash',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'r',
@@ -74,7 +77,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.R,
-		name: 'R'
+		name: 'R',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'Lua',
@@ -82,44 +86,50 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Lua,
-		name: 'Lua'
+		name: 'Lua',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'octave',
 		color: 'orange',
 		description: "Octave",
 		logo: Assets.Octave,
-		name: 'Octave/Matlab'
+		name: 'Octave/Matlab',
+		category: 'pro-lang'
 	}),
 	defineSkill({
-		slug: 'sql',
+		slug: 'p-sql',
 		color: 'orange',
 		description: "Octave",
 		logo: Assets.PostgreSQL,
-		name: 'SQL'
+		name: 'Postgresql',
+		category: 'db'
 	}),
 	defineSkill({
 		slug: 'vhdl',
 		color: 'orange',
 		description: "VHDL",
 		logo: Assets.Unknown,
-		name: 'VHDL'
+		name: 'VHDL',
+		category: 'pro-lang'
 	}),
 	defineSkill({
 		slug: 'opencv',
 		color: 'yellow',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Unknown,
-		name: 'OpenCV'
+		logo: Assets.opencv,
+		name: 'OpenCV',
+		category: "library"
 	}),
 	defineSkill({
 		slug: 'tensorflow',
 		color: 'blue',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Unknown,
-		name: 'Tensorflow'
+		logo: Assets.tf,
+		name: 'Tensorflow',
+		category: "framework"
 	}),
 	defineSkill({
 		slug: 'pytorch',
@@ -127,7 +137,8 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Unknown,
-		name: 'PyTorch'
+		name: 'PyTorch',
+		category: "framework"
 	}),
 	defineSkill({
 		slug: 'Yolo',
@@ -135,23 +146,35 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Unknown,
-		name: 'YOLO'
+		name: 'YOLO',
+		category: "framework",
 	}),
 	defineSkill({
 		slug: 'pandas',
 		color: 'pink',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Unknown,
-		name: 'pandas'
+		logo: Assets.Pandas,
+		name: 'Pandas',
+		category: "library"
+	}),
+	defineSkill({
+		slug: 'numpy',
+		color: 'pink',
+		description:
+			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		logo: Assets.Numpy,
+		name: 'Numpy',
+		category: "library"
 	}),
 	defineSkill({
 		slug: 'scikit',
 		color: 'cyan',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Unknown,
-		name: 'Scikit'
+		logo: Assets.scikit,
+		name: 'Scikit-Learn',
+		category: "library"
 	}),
 	defineSkill({
 		slug: 'keras',
@@ -159,56 +182,64 @@ export const items = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
 		logo: Assets.Unknown,
-		name: 'Keras'
+		name: 'Keras',
+		category: "framework",
 	}),
 	defineSkill({
 		slug: 'linux',
 		color: 'orange',
 		description: "Linux Operating System",
 		logo: Assets.Unknown,
-		name: 'Linux'
+		name: 'Linux',
+		category: "os",
 	}),
 	defineSkill({
 		slug: 'classif',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'Classification'
+		name: 'Classification',
+		category: "appli",
 	}),
 	defineSkill({
 		slug: 'regress',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'Regression'
+		name: 'Regression',
+		category: "appli",
 	}),
 	defineSkill({
 		slug: 'stats',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'Object Detection'
+		name: 'Object Detection',
+		category: "appli",
 	}),
 	defineSkill({
 		slug: 'cluster',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'Clustering'
+		name: 'Clustering',
+		category: "appli",
 	}),
 	defineSkill({
 		slug: 'freertos',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'FreeRTOS'
+		name: 'FreeRTOS',
+		category: "os",
 	}),
 	defineSkill({
 		slug: 'circuit',
 		color: 'orange',
 		description: "",
 		logo: Assets.Unknown,
-		name: 'Electrical circuits'
+		name: 'Electrical circuits',
+		category: "",
 	}),
 ] as const;
 

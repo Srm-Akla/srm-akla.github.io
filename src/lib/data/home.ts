@@ -14,7 +14,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/srm-akla' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
+		link: 'https://www.linkedin.com/in/sriram-akella-2178242b8/'
 	},
 	{
 		platform: Platform.Email,

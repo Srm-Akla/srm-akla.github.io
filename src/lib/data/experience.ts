@@ -90,7 +90,7 @@ export const items: Array<Experience> = [
 		name: 'Internship',
 		color: 'gold',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.mil,
 		description: ''
 	},
 	{
@@ -137,7 +137,7 @@ export const items: Array<Experience> = [
 		name: 'Admin & Boat Maintainance',
 		color: 'aquamarine',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.rkh,
 		description: ''
 	},
 	{

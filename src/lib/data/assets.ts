@@ -84,6 +84,13 @@ const Assets = {
 	opencv: a('OpenCV.png'),
 	scikit: a('scikit-learn.png'),
 	tf: a("TF.png"),
+	mil: a("MIL.png"),
+	rkh: a("RKH.png"),
+	ros: a("ROS.svg"),
+	tux: a("Tux.svg"),
+	pytorch: a("Pytorch.png"),
+	keras: a("Keras.svg"),
+	freertos: a("freeRTOS.png"),
 };
 
 export default Assets;

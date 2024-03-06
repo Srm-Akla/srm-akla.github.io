@@ -70,7 +70,7 @@
 	});
 </script>
 
-<SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-keyword)]'}>
+<SearchPage {title} on:search={onSearch} titleClass={'text-[var(--code-operator)]'}>
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}

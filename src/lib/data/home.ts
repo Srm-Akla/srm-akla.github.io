@@ -3,39 +3,24 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Name';
+export const name = 'Sriram';
 
-export const lastName = 'LastName';
+export const lastName = 'Akella';
 
 export const description =
-	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!';
-
+	`Hey, I'm Sriram Akella, a tech enthusiast with a knack for problem-solving. I hold a Master's in AI and a Bachelor's in Electronics. When I'm not diving into the latest tech trends, you'll find me outdoors staying active or catching up with friends over a pint. Let's connect and explore some exciting projects together!`;
+	
 export const links: Array<{ platform: Platform; link: string }> = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{ platform: Platform.GitHub, link: 'https://github.com/srm-akla' },
 	{
 		platform: Platform.Linkedin,
 		link: 'https://www.linkedin.com/'
 	},
 	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
-	},
-	{
-		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
-	},
-	{
 		platform: Platform.Email,
-		link: 'riadh_adrani@hotmail.fr'
+		link: 'sriramakella@proton.me',
 	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
-	}
+
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');

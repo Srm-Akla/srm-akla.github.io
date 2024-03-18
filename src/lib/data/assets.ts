@@ -91,6 +91,7 @@ const Assets = {
 	pytorch: a("Pytorch.png"),
 	keras: a("Keras.svg"),
 	freertos: a("freeRTOS.png"),
+	mlflow: a("MLFlow.png"),
 };
 
 export default Assets;

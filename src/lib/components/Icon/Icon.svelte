@@ -3,8 +3,6 @@
 	import { viewBox } from './Icons';
 
 	let el: SVGElement;
-
-	export const size = "30px";
 	export let color = 'var(--main-text)';
 
 	export let icon: Icons;
@@ -15,8 +13,8 @@
 	class="inline-block"
 	viewBox={viewBox(icon)}
 	fill={color}
-	height=40px
-	width=40px
+	height=35px
+	width=35px
 >
 	<path d={icon} />
 </svg>

@@ -7,14 +7,18 @@ export const items: Array<Project> = [
 		slug: 'ODIAV',
 		color: '#f5e0dc',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			`
+			The Purpose of the project was to develop software that can detect humans, vehicle, roadlane from an autonomous vehicle's perspective. We have used YOLO algorithm for object detection.
+			Check out the project on github.
+			`,	
 		shortDescription:
 			"Software that can detect humans, vehicles, roadlanes from an autonomous vehicle's perspective.",
-		links: [{ to: '', label: 'GitHub' }],
+		links: [{ to: 'https://github.com/Srm-Akla/ODAV', label: 'GitHub' }],
 		logo: Assets.Unknown,
 		name: 'Object Detection in Autonomous Vehicles',
 		period: {
-			from: new Date()
+			from: new Date(2021, 8, 15),
+			to: new Date(2021, 12, 15),
 		},
 		skills: getSkills('python', 'opencv', 'yolo', 'classif'),
 		type: 'Projects'

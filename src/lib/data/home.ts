@@ -14,7 +14,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	{ platform: Platform.GitHub, link: 'https://github.com/srm-akla' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/in/sriram-akella-2178242b8/'
+		link: 'https://www.linkedin.com/in/srm-akla'
 	},
 	{
 		platform: Platform.Email,
@@ -23,4 +23,4 @@ export const links: Array<{ platform: Platform; link: string }> = [
 
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'sass', 'svelte', 'ts');
+export const skills = getSkills('python', 'tensorflow', 'keras', 'mlflow', 'linux');
